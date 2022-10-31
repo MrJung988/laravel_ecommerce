@@ -17,14 +17,14 @@
 
 </head>
 <body>
-    @if(Request::path() == '/' || '/add-to-cart')
+    @if(Request::path() == '/')
     @include('layouts.navbar')
     @endif
 
     @yield('main')
     
     <br>
-    @if(Request::path() == '/' || '/add-to-cart')
+    @if(Request::path() == '/')
     @include('layouts.footer')
     @endif
     

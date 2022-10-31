@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('lastname');
             $table->string('gender');
             $table->string('dob');
+            $table->string('address');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('confirmPassword');

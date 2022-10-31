@@ -18,7 +18,7 @@
                             <label for="firstname">Firstname</label>
                             <span class="text-danger small">*</span>
                             <div class="form-group">
-                              <input class="form-control" type="text" name="firstname" id="firstname" value="{{old('firstname')}}" placeholder="First Name">
+                              <input class="form-control" type="text" name="firstname" id="firstname" value="{{old('firstname')}}" placeholder="Enter your first name">
                               <span class="text-danger small">@error('firstname') {{$message}} @enderror</span>
                             </div>
                         </div> &nbsp;
@@ -26,7 +26,7 @@
                             <label for="lastname">Lastname</label>
                             <span class="text-danger small">*</span>
                             <div class="form-group">
-                              <input class="form-control" type="text" name="lastname" id="lastname" value="{{old('lastname')}}" placeholder="Last Name" >
+                              <input class="form-control" type="text" name="lastname" id="lastname" value="{{old('lastname')}}" placeholder="Enter your last name" >
                               <span class="text-danger small">@error('lastname') {{$message}} @enderror</span>
                             </div>
                         </div>
@@ -50,10 +50,18 @@
                         </div>
                     </div><br>
                     <div class="col-12">
+                        <label for="address">Address</label>
+                        <span class="text-danger small">*</span>
+                        <div class="form-group">
+                            <input class="form-control" type="address" name="address" id="address" value="{{old('address')}}" placeholder="Enter your address">
+                            <span class="text-danger small">@error('address') {{$message}} @enderror</span>
+                          </div>
+                    </div> <br>
+                    <div class="col-12">
                         <label for="email">Email</label>
                         <span class="text-danger small">*</span>
                         <div class="form-group">
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                            <input class="form-control" type="email" name="email" id="email" value="{{old('email')}}" placeholder="Enter your email">
                             <span class="text-danger small">@error('email') {{$message}} @enderror</span>
                           </div>
                     </div> <br>

@@ -34,6 +34,7 @@ class UserController extends Controller
             'lastname' => 'required',
             'gender' => 'required',
             'dob' => 'required',
+            'address' => 'required',
             'email' => 'required|unique:users|email',
             'password' => 'required|min:6',
             'confirmPassword' => 'required|same:password|min:6',
